@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Nome</title>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    {{#userName}}
+    <p>Olá, <strong>{{userName}}</strong>!</p>
+    {{/userName}}
+    <form action="/salvauser" method="post">
+        <label for="name">Digite seu nome:</label>
+        <input type="text" id="name" name="name" placeholder="{{placeholder}}" required>
+        <button type="submit">{{buttonText}}</button>
+    </form>
+</body>
+</html>
